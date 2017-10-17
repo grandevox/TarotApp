@@ -16,6 +16,7 @@
 		321596A91F95CA2D005AFEFE /* TarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321596A81F95CA2D005AFEFE /* TarotUITests.swift */; };
 		321596B81F95D84C005AFEFE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321596B71F95D84C005AFEFE /* Model.swift */; };
 		321596BB1F95E125005AFEFE /* MajorArcanaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321596BA1F95E125005AFEFE /* MajorArcanaCard.swift */; };
+		32342E991F9609F1007ACDAD /* DeckOfCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32342E981F9609F1007ACDAD /* DeckOfCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		321596AA1F95CA2D005AFEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		321596B71F95D84C005AFEFE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		321596BA1F95E125005AFEFE /* MajorArcanaCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MajorArcanaCard.swift; sourceTree = "<group>"; };
+		32342E981F9609F1007ACDAD /* DeckOfCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				321596B71F95D84C005AFEFE /* Model.swift */,
 				321596BA1F95E125005AFEFE /* MajorArcanaCard.swift */,
+				32342E981F9609F1007ACDAD /* DeckOfCards.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32342E991F9609F1007ACDAD /* DeckOfCards.swift in Sources */,
 				321596B81F95D84C005AFEFE /* Model.swift in Sources */,
 				321596BB1F95E125005AFEFE /* MajorArcanaCard.swift in Sources */,
 				3215968B1F95CA2C005AFEFE /* ViewController.swift in Sources */,
@@ -529,6 +533,7 @@
 				321596AF1F95CA2D005AFEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		321596B01F95CA2D005AFEFE /* Build configuration list for PBXNativeTarget "TarotTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +542,7 @@
 				321596B21F95CA2D005AFEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		321596B31F95CA2D005AFEFE /* Build configuration list for PBXNativeTarget "TarotUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +551,7 @@
 				321596B51F95CA2D005AFEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
