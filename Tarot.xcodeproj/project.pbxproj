@@ -14,6 +14,7 @@
 		321596931F95CA2C005AFEFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321596911F95CA2C005AFEFE /* LaunchScreen.storyboard */; };
 		3215969E1F95CA2D005AFEFE /* TarotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215969D1F95CA2D005AFEFE /* TarotTests.swift */; };
 		321596A91F95CA2D005AFEFE /* TarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321596A81F95CA2D005AFEFE /* TarotUITests.swift */; };
+		321596B81F95D84C005AFEFE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321596B71F95D84C005AFEFE /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		321596A41F95CA2D005AFEFE /* TarotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TarotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		321596A81F95CA2D005AFEFE /* TarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotUITests.swift; sourceTree = "<group>"; };
 		321596AA1F95CA2D005AFEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321596B71F95D84C005AFEFE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		321596871F95CA2C005AFEFE /* Tarot */ = {
 			isa = PBXGroup;
 			children = (
+				321596B91F95DB8C005AFEFE /* Controller */,
+				321596B61F95D839005AFEFE /* Model */,
 				321596881F95CA2C005AFEFE /* AppDelegate.swift */,
-				3215968A1F95CA2C005AFEFE /* ViewController.swift */,
 				3215968C1F95CA2C005AFEFE /* Main.storyboard */,
 				3215968F1F95CA2C005AFEFE /* Assets.xcassets */,
 				321596911F95CA2C005AFEFE /* LaunchScreen.storyboard */,
@@ -123,6 +126,22 @@
 				321596AA1F95CA2D005AFEFE /* Info.plist */,
 			);
 			path = TarotUITests;
+			sourceTree = "<group>";
+		};
+		321596B61F95D839005AFEFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				321596B71F95D84C005AFEFE /* Model.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		321596B91F95DB8C005AFEFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3215968A1F95CA2C005AFEFE /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321596B81F95D84C005AFEFE /* Model.swift in Sources */,
 				3215968B1F95CA2C005AFEFE /* ViewController.swift in Sources */,
 				321596891F95CA2C005AFEFE /* AppDelegate.swift in Sources */,
 			);
