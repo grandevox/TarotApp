@@ -55,6 +55,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imgCard" destination="thW-wK-cRx" id="UKT-tN-zmZ"/>
                         <outlet property="lblAnswers" destination="0Lf-3d-x0y" id="oq4-aa-BSh"/>
                     </connections>
                 </viewController>

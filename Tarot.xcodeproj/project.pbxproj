@@ -15,6 +15,7 @@
 		3215969E1F95CA2D005AFEFE /* TarotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3215969D1F95CA2D005AFEFE /* TarotTests.swift */; };
 		321596A91F95CA2D005AFEFE /* TarotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321596A81F95CA2D005AFEFE /* TarotUITests.swift */; };
 		321596B81F95D84C005AFEFE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321596B71F95D84C005AFEFE /* Model.swift */; };
+		321596BB1F95E125005AFEFE /* MajorArcanaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321596BA1F95E125005AFEFE /* MajorArcanaCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		321596A81F95CA2D005AFEFE /* TarotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotUITests.swift; sourceTree = "<group>"; };
 		321596AA1F95CA2D005AFEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		321596B71F95D84C005AFEFE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		321596BA1F95E125005AFEFE /* MajorArcanaCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MajorArcanaCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				321596B71F95D84C005AFEFE /* Model.swift */,
+				321596BA1F95E125005AFEFE /* MajorArcanaCard.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				321596B81F95D84C005AFEFE /* Model.swift in Sources */,
+				321596BB1F95E125005AFEFE /* MajorArcanaCard.swift in Sources */,
 				3215968B1F95CA2C005AFEFE /* ViewController.swift in Sources */,
 				321596891F95CA2C005AFEFE /* AppDelegate.swift in Sources */,
 			);
