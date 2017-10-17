@@ -70,4 +70,10 @@ struct DeckOfCards
             deckOfCards.insert(card, at: randomCardIndex)
         }
     }
+    
+    mutating func naturalOrder()->[MajorArcanaCard]
+    {
+        let deckOfCards:[MajorArcanaCard] = MajorArcanaCard.getDeck()
+        return deckOfCards
+    }
 }

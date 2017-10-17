@@ -17,6 +17,7 @@
 		321596B81F95D84C005AFEFE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321596B71F95D84C005AFEFE /* Model.swift */; };
 		321596BB1F95E125005AFEFE /* MajorArcanaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321596BA1F95E125005AFEFE /* MajorArcanaCard.swift */; };
 		32342E991F9609F1007ACDAD /* DeckOfCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32342E981F9609F1007ACDAD /* DeckOfCards.swift */; };
+		32342E9B1F963226007ACDAD /* TarotCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32342E9A1F963226007ACDAD /* TarotCardTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		321596B71F95D84C005AFEFE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		321596BA1F95E125005AFEFE /* MajorArcanaCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MajorArcanaCard.swift; sourceTree = "<group>"; };
 		32342E981F9609F1007ACDAD /* DeckOfCards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOfCards.swift; sourceTree = "<group>"; };
+		32342E9A1F963226007ACDAD /* TarotCardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TarotCardTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		321596B91F95DB8C005AFEFE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				32342E9A1F963226007ACDAD /* TarotCardTableViewController.swift */,
 				3215968A1F95CA2C005AFEFE /* ViewController.swift */,
 			);
 			name = Controller;
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32342E9B1F963226007ACDAD /* TarotCardTableViewController.swift in Sources */,
 				32342E991F9609F1007ACDAD /* DeckOfCards.swift in Sources */,
 				321596B81F95D84C005AFEFE /* Model.swift in Sources */,
 				321596BB1F95E125005AFEFE /* MajorArcanaCard.swift in Sources */,

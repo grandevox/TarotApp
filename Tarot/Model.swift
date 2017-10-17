@@ -35,12 +35,29 @@ class Model
     
     let majorArcanaCards:[String: MajorArcanaCard]
     var currentCard:MajorArcanaCard = MajorArcanaCard.fool
+    var deckOfCards:DeckOfCards
     
     var currentCardImageName = "";
     
     // Populate the model with a set of Major Arcana Cards
     init() {
         majorArcanaCards = MajorArcanaCard.createDeck()
+        deckOfCards = DeckOfCards()
+    }
+    
+    /* Here we use a Struct to hold the instance of the model i.e itself*/
+    private struct Static
+    {
+        static var instance: Model?
+    }
+    /* This is a class variable allowing me to access it without first instantiating the model Now we can retrieve the model without instantiating it directly var model = Model.sharedInstance */
+    class var sharedInstance: Model
+    {
+        if !(Static.instance != nil)
+        {
+            Static.instance = Model()
+        }
+        return Static.instance!
     }
     
     // Return the oracles response to the question posed by the user

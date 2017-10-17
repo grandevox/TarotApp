@@ -25,6 +25,8 @@ class ViewController: UIViewController
     
     @IBOutlet weak var btnOracle: UIButton!
     
+    @IBOutlet weak var cardTitle: UILabel!
+    
     var showingBack = false
     var front:UIImageView!
     var back:UIImageView!
@@ -40,6 +42,8 @@ class ViewController: UIViewController
         lblAnswers.text = model.respond()
         
         imgCard.image = UIImage(named: model.currentCard.imageName)
+        
+        cardTitle.text = "The " + model.currentCard.name
         
         registerGestures()
         
@@ -65,8 +69,30 @@ class ViewController: UIViewController
         cardDescription.isHidden = true
         lblAnswers.text =  "Think of a question, then click the button"
         imgCard.image = UIImage(named: "MajorArcana.jpg")
+        cardTitle.text = ""
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if (traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .compact) {
+            cardDescription.font = cardDescription.font.withSize(10)
+            lblAnswers.font = lblAnswers.font.withSize(8)
+        } else {
+            cardDescription.font = cardDescription.font.withSize(17)
+            lblAnswers.font = lblAnswers.font.withSize(17)
+        }
+    }
+    
+    override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
+        if (traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .compact) {
+            cardDescription.font = cardDescription.font.withSize(10)
+            lblAnswers.font = lblAnswers.font.withSize(8)
+        } else {
+            cardDescription.font = cardDescription.font.withSize(17)
+            lblAnswers.font = lblAnswers.font.withSize(17)
+        }
     }
     
     // Register gestures for swiping the card left and right
@@ -142,6 +168,14 @@ class ViewController: UIViewController
             faded.isHidden = true
             cardDescription.isHidden = true
             btnOracle.isHidden = false
+        }
+        
+        if (traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .compact) {
+            cardDescription.font = cardDescription.font.withSize(10)
+            lblAnswers.font = lblAnswers.font.withSize(8)
+        } else {
+            cardDescription.font = cardDescription.font.withSize(17)
+            lblAnswers.font = lblAnswers.font.withSize(17)
         }
     }
     
