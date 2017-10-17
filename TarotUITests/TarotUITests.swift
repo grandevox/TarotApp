@@ -23,14 +23,26 @@ class TarotUITests: XCTestCase {
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Get a reference to your app
+        let app = XCUIApplication()
+        
+        // Test that the initial label text is what you expect
+        var string = app.staticTexts.element(matching: .any, identifier: "answer").label
+        XCTAssertEqual(string, "Think of a question, then click the button")
+        
+        // Test that there is only 1 image displayed on the view
+        XCTAssertEqual(app.images.count, 1)
+        
+        // Test that there is only 1 button on the view
+        XCTAssertEqual(app.buttons.count, 1)
+        
+        // Tap the button
+        app.buttons["Ask the Oracle"].tap()
+        
+        // Test that the label has changed as a result of tapping the button '
+        string = app.staticTexts.element(matching: .any, identifier: "answer").label
+        XCTAssertNotEqual(string,  "Think of a question, then click the button")
     }
     
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,18 +25,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="thW-wK-cRx">
                                 <rect key="frame" x="57" y="40" width="300" height="520"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="thW-wK-cRx" secondAttribute="height" multiplier="15:26" id="IMk-Ce-vUX"/>
+                                    <constraint firstAttribute="width" secondItem="thW-wK-cRx" secondAttribute="height" multiplier="15:26" id="ejh-KM-vQB"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think of a question, then click the button" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lf-3d-x0y">
                                 <rect key="frame" x="57" y="580" width="300" height="40.666666666666629"/>
+                                <accessibility key="accessibilityConfiguration" identifier="answer"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7n-yX-o0k">
-                                <rect key="frame" x="154.66666666666669" y="640.66666666666663" width="105.00000000000006" height="30"/>
-                                <state key="normal" title="Ask The Oracle"/>
+                                <rect key="frame" x="57.333333333333343" y="640.66666666666663" width="300" height="30"/>
+                                <state key="normal" title="Ask the Oracle"/>
                                 <connections>
                                     <action selector="askTheOracleWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJM-nj-5pq"/>
                                 </connections>
@@ -44,14 +45,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="0Lf-3d-x0y" firstAttribute="top" secondItem="thW-wK-cRx" secondAttribute="bottom" constant="20" id="1uZ-sc-6ll"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="thW-wK-cRx" secondAttribute="bottom" constant="176" id="Ckr-TG-GkN"/>
-                            <constraint firstItem="0Lf-3d-x0y" firstAttribute="centerX" secondItem="thW-wK-cRx" secondAttribute="centerX" id="Eme-at-Zdu"/>
-                            <constraint firstItem="thW-wK-cRx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Mac-Hc-X2Y"/>
-                            <constraint firstItem="O7n-yX-o0k" firstAttribute="top" secondItem="0Lf-3d-x0y" secondAttribute="bottom" constant="20" id="Ssr-wE-hn3"/>
-                            <constraint firstItem="0Lf-3d-x0y" firstAttribute="width" secondItem="thW-wK-cRx" secondAttribute="width" id="Uwi-sn-Jv9"/>
-                            <constraint firstItem="O7n-yX-o0k" firstAttribute="centerX" secondItem="thW-wK-cRx" secondAttribute="centerX" id="qEa-5G-sw2"/>
-                            <constraint firstItem="thW-wK-cRx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wQt-vS-0UJ"/>
+                            <constraint firstItem="0Lf-3d-x0y" firstAttribute="width" secondItem="thW-wK-cRx" secondAttribute="width" id="D0t-9k-YCA"/>
+                            <constraint firstItem="thW-wK-cRx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="EUY-vI-9No"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="O7n-yX-o0k" secondAttribute="bottom" constant="65.333333333333371" id="NbJ-UZ-0ea"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="thW-wK-cRx" secondAttribute="bottom" constant="176" id="S3G-QS-vvs"/>
+                            <constraint firstItem="O7n-yX-o0k" firstAttribute="width" secondItem="thW-wK-cRx" secondAttribute="width" id="S5U-Lo-UXu"/>
+                            <constraint firstItem="0Lf-3d-x0y" firstAttribute="centerX" secondItem="thW-wK-cRx" secondAttribute="centerX" id="Uvc-3W-zrI"/>
+                            <constraint firstItem="thW-wK-cRx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hMr-hc-fSX"/>
+                            <constraint firstItem="O7n-yX-o0k" firstAttribute="centerX" secondItem="thW-wK-cRx" secondAttribute="centerX" id="nIC-cF-LAY"/>
+                            <constraint firstItem="0Lf-3d-x0y" firstAttribute="top" secondItem="thW-wK-cRx" secondAttribute="bottom" constant="20" id="ujF-Dq-2UU"/>
                         </constraints>
                     </view>
                     <connections>

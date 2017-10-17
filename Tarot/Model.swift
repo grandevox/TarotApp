@@ -49,13 +49,16 @@ class Model
         // Returns a random integer within the range of indexes for the answers array
         let response: Int = Int(arc4random_uniform(UInt32(majorArcanaCards.count)))
         
-        // Convert the values in the dictionary to an Array and retrieve the value at the specified index
-        let message = Array(majorArcanaCards.values)[response]
+//        // Convert the values in the dictionary to an Array and retrieve the value at the specified index
+//        let message = Array(majorArcanaCards.values)[response]
+//        
+//        // Set the current card name based on the specified index
+//        currentCardImageName = Array(majorArcanaCards.keys)[response] 
+
+        currentCard = Array(majorArcanaCards.values)[response]
+        return currentCard.interpretation
         
-        // Set the current card name based on the specified index
-        currentCardImageName = Array(majorArcanaCards.keys)[response] 
-        
-        return message
+//        return message
     }
     
 //    // Return the Oracle's response to the question posed by the user

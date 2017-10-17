@@ -23,10 +23,10 @@ class ViewController: UIViewController {
     @IBAction func askTheOracle(sender: UIButton)
     {
         // Retrieves a random message from the oracle
-        lblAnswers.text = model.respond()
+        lblAnswers?.text = model.respond()
         
         // Change the image in the UIImageView to the currently selected card
-        imgCard.image = UIImage(named:model.currentCardImageName)
+        imgCard.image = UIImage(named:model.currentCard.imageName)
         
 //        var cardImageName:String = ""
 //        var message:String = ""
