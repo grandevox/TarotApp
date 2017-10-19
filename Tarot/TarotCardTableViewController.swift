@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+protocol Refresh {
+    func refresh(card: MajorArcanaCard)
+}
+
 // Our table view controller now implements the UISearchResultsUpdating protocol that enables
 // it to implement the search bar.
 class TarotCardTableViewController: UITableViewController, UISearchResultsUpdating
@@ -20,6 +24,8 @@ class TarotCardTableViewController: UITableViewController, UISearchResultsUpdati
     var tarot = Model.sharedInstance.deckOfCards.naturalOrder()
     var filteredTarotCards = [MajorArcanaCard]()
     let searchController = UISearchController(searchResultsController: nil)
+    var currentCard: MajorArcanaCard?
+    var delegate: Refresh?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +65,17 @@ class TarotCardTableViewController: UITableViewController, UISearchResultsUpdati
         
         return cell!
         
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        currentCard = self.tarot[indexPath.row]
+        
+        // This points to our detail View controller so we are setting the property on the detail view when we select a card in our master view
+        self.delegate?.refresh(card: currentCard!)
+        
+        if let detailViewController = self.delegate as? TarotCardDetailViewController {
+            splitViewController?.showDetailViewController(detailViewController.navigationController!, sender: nil)
+        }
     }
     
     override func prepare (for segue: UIStoryboardSegue, sender: Any?)

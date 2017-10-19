@@ -26,7 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Think of a question, then click the button" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lf-3d-x0y">
-                                <rect key="frame" x="57" y="580" width="300" height="40.666666666666629"/>
+                                <rect key="frame" x="58.666666666666657" y="575.33333333333337" width="297" height="20.333333333333258"/>
                                 <accessibility key="accessibilityConfiguration" identifier="answer"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -41,20 +41,20 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lG9-Po-KaD" userLabel="Placeholder">
-                                <rect key="frame" x="57" y="40" width="300" height="520"/>
+                                <rect key="frame" x="58.666666666666657" y="40" width="297" height="515.33333333333337"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="thW-wK-cRx">
-                                        <rect key="frame" x="-0.66666666666665719" y="-0.66666666666668561" width="300.66666666666663" height="520"/>
+                                        <rect key="frame" x="-0.66666666666665719" y="-0.66666666666668561" width="297.66666666666663" height="515.33333333333326"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRG-ly-TGQ" userLabel="Faded">
-                                        <rect key="frame" x="0.0" y="-0.66666666666668561" width="299.33333333333331" height="520"/>
+                                        <rect key="frame" x="0.0" y="-0.66666666666668561" width="296.33333333333331" height="515.33333333333326"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXA-Y8-73E" userLabel="Description">
-                                        <rect key="frame" x="0.0" y="-0.66666666666668561" width="299.33333333333331" height="520"/>
+                                        <rect key="frame" x="0.0" y="-0.66666666666668561" width="296.33333333333331" height="515.33333333333326"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -64,41 +64,18 @@
                                 <constraints>
                                     <constraint firstItem="thW-wK-cRx" firstAttribute="width" secondItem="lG9-Po-KaD" secondAttribute="width" id="8mi-6T-go0"/>
                                     <constraint firstItem="cRG-ly-TGQ" firstAttribute="height" secondItem="lG9-Po-KaD" secondAttribute="height" id="BEk-eO-UbQ"/>
-                                    <constraint firstAttribute="height" constant="260" id="BUV-ns-hRx"/>
                                     <constraint firstItem="thW-wK-cRx" firstAttribute="centerY" secondItem="lG9-Po-KaD" secondAttribute="centerY" id="D51-HG-yF5"/>
                                     <constraint firstItem="thW-wK-cRx" firstAttribute="centerX" secondItem="lG9-Po-KaD" secondAttribute="centerX" id="ESb-RX-uIJ"/>
-                                    <constraint firstAttribute="height" constant="520" id="JyA-s4-cQb"/>
-                                    <constraint firstAttribute="width" constant="150" id="LRF-4P-Iws"/>
                                     <constraint firstItem="thW-wK-cRx" firstAttribute="height" secondItem="lG9-Po-KaD" secondAttribute="height" id="MGf-WH-tMQ"/>
                                     <constraint firstItem="hXA-Y8-73E" firstAttribute="centerY" secondItem="lG9-Po-KaD" secondAttribute="centerY" id="Mf3-W7-V4o"/>
+                                    <constraint firstAttribute="width" secondItem="lG9-Po-KaD" secondAttribute="height" multiplier="300:520" id="Ngc-Gt-kiC"/>
                                     <constraint firstItem="hXA-Y8-73E" firstAttribute="height" secondItem="lG9-Po-KaD" secondAttribute="height" id="Vri-rL-m5m"/>
                                     <constraint firstItem="cRG-ly-TGQ" firstAttribute="centerY" secondItem="lG9-Po-KaD" secondAttribute="centerY" id="ZPM-8p-K2O"/>
                                     <constraint firstItem="hXA-Y8-73E" firstAttribute="width" secondItem="lG9-Po-KaD" secondAttribute="width" id="d8x-3z-OFX"/>
-                                    <constraint firstAttribute="width" constant="300" id="olz-Sg-0QV"/>
                                     <constraint firstItem="cRG-ly-TGQ" firstAttribute="centerX" secondItem="lG9-Po-KaD" secondAttribute="centerX" id="p52-rw-l6T"/>
                                     <constraint firstItem="hXA-Y8-73E" firstAttribute="centerX" secondItem="lG9-Po-KaD" secondAttribute="centerX" id="zXb-mp-8Pi"/>
                                     <constraint firstItem="cRG-ly-TGQ" firstAttribute="width" secondItem="lG9-Po-KaD" secondAttribute="width" id="zuv-fe-HPP"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="BUV-ns-hRx"/>
-                                        <exclude reference="LRF-4P-Iws"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="BUV-ns-hRx"/>
-                                        <exclude reference="JyA-s4-cQb"/>
-                                        <include reference="LRF-4P-Iws"/>
-                                        <exclude reference="olz-Sg-0QV"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="JyA-s4-cQb"/>
-                                        <include reference="olz-Sg-0QV"/>
-                                    </mask>
-                                </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSO-42-U3I" userLabel="Title">
                                 <rect key="frame" x="20" y="28" width="265" height="42"/>
@@ -122,6 +99,7 @@
                             <constraint firstItem="O7n-yX-o0k" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Wzz-NL-mT7"/>
                             <constraint firstItem="0Lf-3d-x0y" firstAttribute="width" secondItem="lG9-Po-KaD" secondAttribute="width" id="eGF-5k-9m5"/>
                             <constraint firstItem="0Lf-3d-x0y" firstAttribute="centerX" secondItem="lG9-Po-KaD" secondAttribute="centerX" id="vKm-2U-7pI"/>
+                            <constraint firstItem="lG9-Po-KaD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="zLR-Fd-gin"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -157,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1024.6376811594205" y="121.46739130434784"/>
+            <point key="canvasLocation" x="116" y="116"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="BKm-Iy-f1Q">
@@ -175,9 +153,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="DDL-o4-YYn" kind="show" id="Uhz-Z2-pgz"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -189,7 +164,23 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0H-xC-y3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="905"/>
+            <point key="canvasLocation" x="1090" y="905"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="oia-vs-Yf2">
+            <objects>
+                <navigationController title="Detail" id="hX9-Y5-EdB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z5w-zh-XN0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DDL-o4-YYn" kind="relationship" relationship="rootViewController" id="pBa-Lc-uTd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zn-Wv-rsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="1705"/>
         </scene>
         <!--Tarot Card Detail View Controller-->
         <scene sceneID="EdP-ZJ-bUA">
@@ -203,32 +194,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yvv-Ww-Ask">
-                                <rect key="frame" x="20" y="79" width="165.66666666666666" height="287.33333333333331"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ru3-Yc-2To">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Fool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-nQ-a2w">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="53.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="Fool" translatesAutoresizingMaskIntoConstraints="NO" id="Yvv-Ww-Ask">
+                                        <rect key="frame" x="47.333333333333314" y="68.666666666666629" width="279.33333333333337" height="484"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Yvv-Ww-Ask" secondAttribute="height" multiplier="300:520" id="vvY-7Y-MW1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2H8-y7-qxl">
+                                        <rect key="frame" x="0.0" y="567.66666666666652" width="374" height="104.33333333333337"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aries" translatesAutoresizingMaskIntoConstraints="NO" id="Giz-oI-wdn">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Giz-oI-wdn" secondAttribute="height" multiplier="1:1" id="NE8-VO-F4c"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scorpius" translatesAutoresizingMaskIntoConstraints="NO" id="jk8-Ce-qur">
+                                                <rect key="frame" x="164.66666666666666" y="0.0" width="44.666666666666686" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="jk8-Ce-qur" secondAttribute="height" multiplier="1:1" id="ao6-yB-CjC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pisces" translatesAutoresizingMaskIntoConstraints="NO" id="b5H-1N-26Z">
+                                                <rect key="frame" x="329" y="0.0" width="45" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="b5H-1N-26Z" secondAttribute="height" multiplier="1:1" id="qJX-o7-s9x"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Giz-oI-wdn" firstAttribute="width" secondItem="2H8-y7-qxl" secondAttribute="width" multiplier="0.12" id="meo-s2-qnX"/>
+                                            <constraint firstItem="jk8-Ce-qur" firstAttribute="width" secondItem="Giz-oI-wdn" secondAttribute="width" id="v8A-ea-zE3"/>
+                                            <constraint firstItem="b5H-1N-26Z" firstAttribute="width" secondItem="Giz-oI-wdn" secondAttribute="width" id="xTo-y2-igk"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Yvv-Ww-Ask" secondAttribute="height" multiplier="15:26" id="wA1-Lz-f7O"/>
+                                    <constraint firstItem="A9H-nQ-a2w" firstAttribute="width" secondItem="ru3-Yc-2To" secondAttribute="width" id="CB9-Zg-EX1"/>
+                                    <constraint firstItem="A9H-nQ-a2w" firstAttribute="height" secondItem="ru3-Yc-2To" secondAttribute="height" multiplier="0.08" id="dAd-gu-aXd"/>
+                                    <constraint firstItem="Yvv-Ww-Ask" firstAttribute="height" secondItem="ru3-Yc-2To" secondAttribute="height" multiplier="0.72" id="jWu-So-SWj"/>
                                 </constraints>
-                            </imageView>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Yvv-Ww-Ask" firstAttribute="width" secondItem="iMx-vQ-Omf" secondAttribute="width" multiplier="0.4" id="I9Q-5f-mLZ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Yvv-Ww-Ask" secondAttribute="leading" id="Sg7-2Z-kHS"/>
-                            <constraint firstItem="Yvv-Ww-Ask" firstAttribute="top" secondItem="cZk-5W-kYM" secondAttribute="bottom" constant="15" id="s7P-FP-IhL"/>
+                            <constraint firstItem="ru3-Yc-2To" firstAttribute="top" secondItem="cZk-5W-kYM" secondAttribute="bottom" id="Buv-HD-sbm"/>
+                            <constraint firstItem="ru3-Yc-2To" firstAttribute="leading" secondItem="iMx-vQ-Omf" secondAttribute="leadingMargin" id="XgU-lY-s5y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ru3-Yc-2To" secondAttribute="trailing" id="bRB-4L-suf"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ru3-Yc-2To" secondAttribute="bottom" id="tbx-Hs-xiw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="C6E-0a-6La"/>
                     <connections>
                         <outlet property="image" destination="Yvv-Ww-Ask" id="Ppu-p8-H0J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rym-g9-Y7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2014" y="905"/>
+            <point key="canvasLocation" x="1089.8550724637682" y="1704.6195652173915"/>
         </scene>
         <!--List-->
+        <scene sceneID="hMA-jB-dtF">
+            <objects>
+                <splitViewController id="7xg-GQ-UF0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" id="yXI-55-iHE"/>
+                    <connections>
+                        <segue destination="hEb-yO-SCS" kind="relationship" relationship="masterViewController" id="cpw-hx-Q7Z"/>
+                        <segue destination="hX9-Y5-EdB" kind="relationship" relationship="detailViewController" id="9Dg-sk-chh"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZ7-aC-eBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="905"/>
+        </scene>
+        <!--Master-->
         <scene sceneID="FS3-Fc-KPM">
             <objects>
-                <navigationController id="hEb-yO-SCS" sceneMemberID="viewController">
+                <navigationController title="Master" id="hEb-yO-SCS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List" id="oD1-7n-K5Y" userLabel="List Tab"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nN4-wI-bff">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -254,15 +305,18 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="PXl-a9-OKT"/>
-                        <segue destination="hEb-yO-SCS" kind="relationship" relationship="viewControllers" id="IzA-sO-uiS"/>
+                        <segue destination="7xg-GQ-UF0" kind="relationship" relationship="viewControllers" id="caB-0J-1zK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXj-Lp-aO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.39130434782609" y="121.46739130434784"/>
+            <point key="canvasLocation" x="-868" y="116"/>
         </scene>
     </scenes>
     <resources>
         <image name="Fool" width="300" height="519"/>
+        <image name="aries" width="170" height="170"/>
+        <image name="pisces" width="170" height="170"/>
+        <image name="scorpius" width="170" height="170"/>
     </resources>
 </document>

@@ -14,6 +14,7 @@ class TarotCardDetailViewController: UIViewController {
      it needs to display from the MasterTableViewController
      */
     var cardName:String?
+    var currentCard: MajorArcanaCard?
     
     @IBOutlet weak var image: UIImageView!
     
@@ -22,7 +23,7 @@ class TarotCardDetailViewController: UIViewController {
     {
         super.viewDidLoad()
         // Set the inital card image to the fool
-        image.image = UIImage(named: cardName!)
+        image.image = UIImage(named: (currentCard?.imageName)!)
         print("")
     }
     
@@ -31,5 +32,13 @@ class TarotCardDetailViewController: UIViewController {
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+}
+
+extension TarotCardDetailViewController: Refresh {
+    func refresh(card: MajorArcanaCard) {
+        self.cardName = card.name
+        let imageName = card.name.replacingOccurrences(of: " ", with: "")
+        image.image = UIImage(named: imageName)
     }
 }
