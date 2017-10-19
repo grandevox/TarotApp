@@ -75,7 +75,7 @@ enum MajorArcanaCard:Int
             case .chariot: return "Chariot"
             case .justice: return "Justice"
             case .hermit: return "Hermit"
-            case .wheelOfFortune: return "Wheel of Fortune"
+            case .wheelOfFortune: return "Wheel Of Fortune"
             case .strength: return "Strength"
             case .hangedMan: return "Hanged Man"
             case .death: return "Death"
@@ -87,7 +87,7 @@ enum MajorArcanaCard:Int
             case .sun: return "Sun"
             case .judgement: return "Judgement"
             case .world: return "World"
-            default: return "Fool"
+//            default: return "Fool"
             }
         }
     }
@@ -120,7 +120,7 @@ enum MajorArcanaCard:Int
             case .sun: return "ר"
             case .judgement: return "ש"
             case .world: return "ת"
-            default: return "א"
+//            default: return "א"
             }
         }
     }
@@ -160,7 +160,7 @@ enum MajorArcanaCard:Int
             case .sun: return "Relax, it is done."
             case .judgement: return "Be discerning and consult others before making a decision."
             case .world: return "The result you are looking for has already happened."
-            default: return "Go forth with faith."
+//            default: return "Go forth with faith."
             }
         }
     }

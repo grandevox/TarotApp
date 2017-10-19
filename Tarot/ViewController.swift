@@ -15,7 +15,7 @@ class ViewController: UIViewController
     
     @IBOutlet weak var imgCard: UIImageView!
     // Property referencing the model for managing data and business logic
-    var model = Model()
+    var model = Model.sharedInstance
     
     @IBOutlet weak var placeHolder: UIView!
     

@@ -33,17 +33,11 @@ class Model
 //                            "Judgement" : "Be discerning and consult others before making a decision.",
 //                            "World" : "The result you are looking for has already happened." ]
     
-    let majorArcanaCards:[String: MajorArcanaCard]
-    var currentCard:MajorArcanaCard = MajorArcanaCard.fool
+    //let majorArcanaCards:[String: MajorArcanaCard]
+    var currentCard = MajorArcanaCard.fool
     var deckOfCards:DeckOfCards
     
-    var currentCardImageName = "";
-    
-    // Populate the model with a set of Major Arcana Cards
-    init() {
-        majorArcanaCards = MajorArcanaCard.createDeck()
-        deckOfCards = DeckOfCards()
-    }
+    //var currentCardImageName = "";
     
     /* Here we use a Struct to hold the instance of the model i.e itself*/
     private struct Static
@@ -59,12 +53,36 @@ class Model
         }
         return Static.instance!
     }
+    // Populate the model with a set of Major Arcana Cards
+    private init()
+    {
+        deckOfCards = DeckOfCards()
+    }
     
     // Return the oracles response to the question posed by the user
     func respond()->String
     {
+//        // Returns the Fool Card because this is the default
+//        let cardFool = MajorArcanaCard()
+//        let descFool = cardFool.getCardDescription()
+//        var cardFoolImpersonator = cardFool
+//        
+//        // Returns the card I want based on the card number I provide
+//        let cardMagician = MajorArcanaCard(number: 2)
+//        
+//        // There is a possiblity that this might return nil, if
+//        // the card requested does not exist.
+//        let descMagician = cardMagician?.getCardDescription()
+//        
+//        // Returns the card I want by its name as indicated by the Cases that define the card
+//        let cardHermit = MajorArcanaCard.hermit
+//        
+//        let cardRandom = MajorArcanaCard(number: Int(arc4random_uniform(UInt32(22))))
+//        
+//        let descRandom = cardRandom?.getCardDescription()
+        
         // Returns a random integer within the range of indexes for the answers array
-        let response: Int = Int(arc4random_uniform(UInt32(majorArcanaCards.count)))
+        let response: Int = Int(arc4random_uniform(UInt32(deckOfCards.deckOfCards.count)))
         
 //        // Convert the values in the dictionary to an Array and retrieve the value at the specified index
 //        let message = Array(majorArcanaCards.values)[response]
@@ -72,7 +90,7 @@ class Model
 //        // Set the current card name based on the specified index
 //        currentCardImageName = Array(majorArcanaCards.keys)[response] 
 
-        currentCard = Array(majorArcanaCards.values)[response]
+        currentCard = Array(deckOfCards.deckOfCards)[response]
         return currentCard.interpretation
         
 //        return message

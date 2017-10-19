@@ -6,7 +6,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -125,8 +128,8 @@
                                 <exclude reference="wSO-42-U3I"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="CRO-NF-sLB"/>
                                 <exclude reference="7wb-8b-ZIQ"/>
+                                <exclude reference="CRO-NF-sLB"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -134,10 +137,10 @@
                                 <include reference="wSO-42-U3I"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8id-OB-cIo"/>
-                                <include reference="CRO-NF-sLB"/>
                                 <include reference="7wb-8b-ZIQ"/>
                                 <exclude reference="Oxb-mE-Kxj"/>
+                                <exclude reference="8id-OB-cIo"/>
+                                <include reference="CRO-NF-sLB"/>
                             </mask>
                         </variation>
                     </view>
@@ -172,6 +175,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="DDL-o4-YYn" kind="show" id="Uhz-Z2-pgz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -184,6 +190,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0H-xC-y3v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1033" y="905"/>
+        </scene>
+        <!--Tarot Card Detail View Controller-->
+        <scene sceneID="EdP-ZJ-bUA">
+            <objects>
+                <viewController id="DDL-o4-YYn" customClass="TarotCardDetailViewController" customModule="Tarot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cZk-5W-kYM"/>
+                        <viewControllerLayoutGuide type="bottom" id="otW-3x-kFY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iMx-vQ-Omf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yvv-Ww-Ask">
+                                <rect key="frame" x="20" y="79" width="165.66666666666666" height="287.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yvv-Ww-Ask" secondAttribute="height" multiplier="15:26" id="wA1-Lz-f7O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yvv-Ww-Ask" firstAttribute="width" secondItem="iMx-vQ-Omf" secondAttribute="width" multiplier="0.4" id="I9Q-5f-mLZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Yvv-Ww-Ask" secondAttribute="leading" id="Sg7-2Z-kHS"/>
+                            <constraint firstItem="Yvv-Ww-Ask" firstAttribute="top" secondItem="cZk-5W-kYM" secondAttribute="bottom" constant="15" id="s7P-FP-IhL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="Yvv-Ww-Ask" id="Ppu-p8-H0J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rym-g9-Y7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="905"/>
         </scene>
         <!--List-->
         <scene sceneID="FS3-Fc-KPM">
@@ -208,6 +248,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8pG-rh-lJy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="wKK-8R-sib">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
